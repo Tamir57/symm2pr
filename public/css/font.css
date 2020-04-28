@@ -1,1 +1,132 @@
-h4 { color:white;}
+/* font montserrat */
+@font-face {
+	font-family: "Montserrat-Medium";
+	src: url('/symm2pr/templates/fonts/montserrat/Montserrat-Medium.ttf');
+}
+
+@font-face {
+	font-family: "Montserrat-ExtraBold";
+	src: url('/symm2pr/templates/fonts/montserrat/Montserrat-ExtraBold.ttf');
+}
+
+@font-face {
+	font-family: "Montserrat-SemiBold";
+	src: url('/symm2pr/templates/fonts/montserrat/Montserrat-SemiBold.ttf');
+}
+
+/* roboto-regular */
+@font-face {
+	font-family: "roboto-regular";
+	src: url('/symm2pr/templates/fonts/roboto/roboto-regular.ttf');
+}
+
+
+a:link {
+	text-decoration: none;
+	/* color: inherit; */
+  }
+  
+  a:visited {
+	text-decoration: none;
+	/* color: inherit; */
+  }
+  
+  a:hover {
+	text-decoration: none;
+	color: white;
+  }
+  
+  a:active {
+	text-decoration: none;
+	/* color: inherit; */
+}
+
+.header-btn-a {
+	font-family: "Montserrat-ExtraBold";
+	color:white;
+	font-size: 16px;
+}
+
+.header-btn-a-black {
+	font-family: "Montserrat-ExtraBold";
+	color:black;
+	font-size: 16px;
+}
+
+.header-a {
+	font-family: "Montserrat-ExtraBold";
+	color:white;
+	font-size: 16px;
+}
+
+.header-a:hover {
+	font-family: "Montserrat-ExtraBold";
+	color:#D9000D;
+	font-size: 16px;
+}
+
+.header-a2 {
+	font-family: "Montserrat-ExtraBold";
+	color:#676767;
+	font-size: 16px;
+}
+
+.footer-a {
+	font-family: "Montserrat-Medium";
+	color:white;
+	font-size: 14px;
+}
+
+.footer-a2 {
+	font-family: "Montserrat-ExtraBold";
+	color:white;
+	font-size: 16px;
+}
+
+.jumbotron-affiliate {
+	font-family: "Montserrat-Medium";
+	color:white;
+	font-size: 24px;
+}
+
+h1 {
+	font-family: "Montserrat-ExtraBold";
+	font-size: 40px;
+	color: white;
+}
+
+h2 {
+	font-family: "Montserrat-SemiBold";
+	font-size: 32px;
+	color: #D9000D;
+}
+h3 {
+	font-family: "Montserrat-ExtraBold";
+	font-size: 28px;
+	color: #000000;
+}
+
+h4 {
+	font-family: "Montserrat-ExtraBold";
+	font-size: 18px;
+	color: #000000;
+}
+
+h5 {
+	font-family: "Montserrat-SemiBold";
+	font-size: 16px;
+	color: #676767;
+}
+
+
+p {
+	font-family: "roboto-regular";
+	font-size: 16px;
+	color: #676767;
+}
+
+label {
+	font-family: "roboto-regular";
+	font-size: 18px;
+	color: #676767;
+}

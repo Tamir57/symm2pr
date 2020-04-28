@@ -1,40 +1,78 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello AccueilController!{% endblock %}
+{% block title %}M2PR{% endblock %}
 
 {% block body %}
 
-<div class="container-fluid bg-light p-0" >
-    <div class="container-fluid position-relative" style="z-index:1; top:-56px; background-image: url(/symm2pr/templates/images/banner/accueil.png); background-size: cover; height: 775px;" >
+<div class="container-fluid bg-color-fond p-0" >
+    <div class="container-fluid mb-5 banner-accueil" >
         <div class="container h-100" >
             <div class="row h-75"></div>
-            <div class="row"><h4>VENEZ DÉCOUVRIR...</h4></div>
-            <div class="row"><a href="#" class="btn btn-outline-success">DÉCOUVRIR</a></div>
+            <div class="row"><h1>VENEZ DÉCOUVRIR...</h1></div>
+            <div class="row"><a href="#" class="btn-principal btn-radius btn-padding header-btn-a">DÉCOUVRIR</a></div>
         </div>
     </div>
 
-    <div class="container bg-trasnparent" >
-        <div class="row">
-            <div class="col-sm-3">
-                <h3>DES PROGRAMMES QUI RÉPONDENT A TOUTES TES ATTENTES DE CROSSFITTER</h3>
-            </div>
-            <div class="col-sm-9">
-                <div class="card-deck">
-                    {% for programme in programmes %}
-                        <div class="card" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">{{programme.nom}}</h5>
-                                <p class="card-text">{{programme.description}}</p>
-                                <a href="#" class="btn btn-primary">DÉCOUVRIR</a>
-                            </div>
-                        </div>
-                    {% endfor %}
+    <div class="container bg-transparent" >
+        <div class="row row-cols-1 row-cols-md-3">
+            <div class="col-lg-3 mb-4 d-flex justify-content-start p-0">
+                <div style="border:none;" class="card flex-fill bg-transparent">
+                    <h3 class="card-text">DES PROGRAMMES QUI RÉPONDENT A TOUTES TES ATTENTES DE CROSSFITTER</h3>
                 </div>
             </div>
-
+            {% for programme in programmes %}
+                <div class="col-lg-3 mb-4 d-flex">
+                    <div class="card flex-fill card-radius">
+                        <img src="/symm2pr/templates/images/{{programme.cardimage}}" class="card-img-top card-radius" alt="...">
+                        <div class="card-body ">
+                            <h4 class="card-title">{{programme.nom}}</h4>
+                            <p class="card-text">{{programme.description}}</p>
+                            <a href="#" class="btn-principal btn-radius btn-padding header-btn-a" href="#" type="">DÉCOUVRIR</a>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
         </div>
     </div>
+
+    <div class="jumbotron jumbotron-fluid banner-affiliate text-center">
+        <div class="container">
+            <h3 class="display-4" style="color:white;">M2PR AFFILIATE</h3>
+            <p class="lead jumbotron-affiliate mt-5">M2PR Afiliate s’adresse au box affiliées Crossfit qui souhaite proposer une programmation complète à ses adhérents</p>
+            <a class="btn-full-blanc btn-radius btn-padding header-btn-a-black" href="">DÉCOUVRIR</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="card mb-3" {# style="max-width: 540px;" #}>
+                <div class="row no-gutters">
+                    <div class="col-md-6">
+                    <img src="/symm2pr/templates/images/banner/box.png" class="card-img" alt="...">
+                    </div>
+                    <div class="col-md-6">
+                    <div class="card-body">
+                        <h3 class="card-title">CROSSFIT 571, LA PREMIÈRE BOX DE CROSSFIT À OUVRIR EN LORRAINE</h3>
+                        <p class="card-text">Venez découvrir notre espace totalement dédié au CrossFit. Deux zones de WOD, une zone pour la pratique libre ainsi qu’un espace dédié à la communauté totalisent une surface de 1000m² permettant à nos adhérents de s’épanouir et de progresser.</p>
+                        <a class="btn-principal btn-radius btn-padding header-btn-a" href="#">DÉCOUVRIR</a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="jumbotron jumbotron-fluid bg-color-noir mb-0" style="margin-top:200px;">
+        <div class=" text-center position-relative" style="top:-200px;">
+            <img class="img-fluid" src="/symm2pr/templates/images/banner/coachs.png" alt="">
+        </div>
+        <div class="container text-center position-relative" style="top:-100px;">
+            <h3 class="display-4" style="color:white;">TROIS COACHS 100% INVESTIS</h3>
+            <a class="btn-principal btn-radius btn-padding header-btn-a" href="#">DÉCOUVRIR</a>
+        </div>
+    </div>
+
+
 </div>
 
 

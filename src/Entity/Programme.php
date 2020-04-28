@@ -51,6 +51,11 @@ class Programme
      */
     private $descriptionSecondaire;
 
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $CardImage;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -136,6 +141,18 @@ class Programme
     public function setDescriptionSecondaire(string $descriptionSecondaire): self
     {
         $this->descriptionSecondaire = $descriptionSecondaire;
+
+        return $this;
+    }
+
+    public function getCardImage(): ?string
+    {
+        return $this->CardImage;
+    }
+
+    public function setCardImage(string $CardImage): self
+    {
+        $this->CardImage = $CardImage;
 
         return $this;
     }
